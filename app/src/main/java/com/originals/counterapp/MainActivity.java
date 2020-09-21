@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public static String TAG= "MainActivity";
     int getSavedValue;
     private TextView tv;
-    final int dob=1992;
 
     SharedPreferences sharedpreferences;
 
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt(counter, getSavedValue);
         editor.apply();
     }
-    // decrease value buy 1
+    // decrease value by 1
     public void  decrease(){
         getSavedValue--;
         tv.setText(" " + getSavedValue);
